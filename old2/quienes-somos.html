@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiénes Somos — K9 Template Seguridad K9</title>
+  <meta name="description" content="Conoce a K9 Template: más de [X] años como empresa de seguridad K9 y privada en México. Nuestra misión, valores, historia y certificaciones." />
+  <link rel="canonical" href="https://k9template.com/quienes-somos.html" />
+  <meta property="og:title" content="Quiénes Somos — K9 Template Seguridad" />
+  <meta property="og:description" content="Más de [X] años como empresa de seguridad K9 y privada en México." />
+  <meta property="og:url" content="https://k9template.com/quienes-somos.html" />
+  <meta property="og:type" content="website" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "Quiénes Somos — K9 Template Seguridad",
+    "description": "Historia, misión, valores y certificaciones de K9 Template Seguridad K9.",
+    "url": "https://k9template.com/quienes-somos.html"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .page-hero { padding: 120px 0 80px; border-bottom: 0.5px solid var(--border); }
+
+    /* Story section */
+    .story-section { padding: 100px 0; }
+    .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .story-grid h2 { font-family: var(--font-display); font-size: clamp(40px, 5vw, 64px); letter-spacing: 2px; line-height: 0.95; margin: 16px 0 24px; }
+    .story-grid p { font-size: 15px; color: var(--muted); line-height: 1.8; margin-bottom: 16px; }
+    .story-side { display: flex; flex-direction: column; gap: 24px; }
+    .story-quote {
+      border-left: 2px solid var(--gold);
+      padding-left: 24px;
+      margin: 8px 0;
+    }
+    .story-quote p { font-size: 17px; color: var(--white); font-style: italic; line-height: 1.6; margin-bottom: 8px; }
+    .story-quote cite { font-size: 13px; color: var(--muted); font-style: normal; font-family: var(--font-cond); letter-spacing: 1px; text-transform: uppercase; }
+
+    /* Values */
+    .values-section { padding: 80px 0; border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); background: var(--panel); }
+    .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: var(--border); border: 0.5px solid var(--border); border-radius: 4px; overflow: hidden; margin-top: 48px; }
+    .value-card { background: var(--panel); padding: 36px 28px; transition: background 0.25s; }
+    .value-card:hover { background: var(--navy-mid); }
+    .value-number { font-family: var(--font-display); font-size: 40px; color: var(--gold); opacity: 0.5; margin-bottom: 12px; }
+    .value-card h3 { font-family: var(--font-cond); font-size: 16px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
+    .value-card p { font-size: 14px; color: var(--muted); line-height: 1.65; }
+
+    /* Timeline */
+    .timeline-section { padding: 100px 0; }
+    .timeline { margin-top: 56px; position: relative; }
+    .timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: var(--border-2); }
+    .timeline-item { padding: 0 0 48px 48px; position: relative; }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -4px; top: 6px;
+      width: 9px; height: 9px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+    .timeline-year { font-family: var(--font-display); font-size: 32px; color: var(--gold); letter-spacing: 1px; margin-bottom: 8px; }
+    .timeline-item h3 { font-family: var(--font-cond); font-size: 16px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }
+    .timeline-item p { font-size: 15px; color: var(--muted); line-height: 1.65; max-width: 480px; }
+
+    /* Certs */
+    .cert-section { padding: 80px 0; border-top: 0.5px solid var(--border); }
+    .certs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 48px; }
+    .cert-card {
+      background: var(--panel);
+      border: 0.5px solid var(--border-2);
+      border-radius: 4px;
+      padding: 28px 24px;
+      text-align: center;
+      transition: border-color 0.25s;
+    }
+    .cert-card:hover { border-color: var(--gold); }
+    .cert-icon { font-family: var(--font-display); font-size: 36px; color: var(--gold); margin-bottom: 12px; }
+    .cert-card h3 { font-family: var(--font-cond); font-size: 15px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }
+    .cert-card p { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+    @media (max-width: 768px) {
+      .story-grid { grid-template-columns: 1fr; gap: 40px; }
+      .timeline-item { padding-left: 32px; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <header id="site-header" role="banner">
+    <a href="index.html" class="header-logo" aria-label="K9 Template — Inicio">
+      <div class="logo-icon" aria-hidden="true">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M4 4L10 10L4 16M10 4L16 10L10 16" stroke="#F5B700" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div><div class="logo-text">K9TEMPLATE</div><div class="logo-sub">Seguridad K9</div></div>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="index.html">Home</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="quienes-somos.html">Quiénes Somos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <a href="contacto.html" class="nav-cta">Cotizar</a>
+    <button class="nav-hamburger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </header>
+  <nav class="mobile-nav" aria-label="Menú móvil">
+    <a href="index.html">Home</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="quienes-somos.html">Quiénes Somos</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main class="page-content">
+
+    <section class="page-hero container" aria-labelledby="qs-heading">
+      <span class="tag reveal">Nuestra historia</span>
+      <h1 class="reveal reveal-delay-1" id="qs-heading" style="font-family:var(--font-display);font-size:clamp(48px,8vw,96px);line-height:0.93;letter-spacing:3px;">QUIÉNES<br>SOMOS</h1>
+      <p class="section-body reveal reveal-delay-2" style="margin-top:16px;">Más de dos décadas construyendo confianza. Somos la empresa de seguridad K9 y privada en México, reconocidos por nuestro compromiso con la excelencia y el bienestar de nuestras unidades caninas.</p>
+    </section>
+
+    <section class="story-section container" aria-labelledby="story-heading">
+      <div class="story-grid">
+        <div class="reveal">
+          <span class="tag">Nuestra misión</span>
+          <h2 id="story-heading">CREANDO<br>ENTORNOS<br><em class="gold">SEGUROS</em></h2>
+          <p>Con años de experiencia, K9 Template ha sido sinónimo de seguridad integral en México. Nació con la convicción de que la protección efectiva requiere más que un solo elemento: requiere un sistema completo, coordinado y en constante evolución.</p>
+          <p>Nos distinguimos en el mercado por ofrecer todos los servicios de seguridad que una empresa puede necesitar, desde un proveedor estratégico único. Esta ventaja competitiva nos ha permitido construir relaciones de largo plazo con clientes de clase mundial.</p>
+          <div class="story-quote">
+            <p>"Tener a K9 Template como proveedor estratégico en detección ha sido una de las mejores decisiones que hemos tomado."</p>
+            <cite>Director de Seguridad — LogiCorp México</cite>
+          </div>
+        </div>
+        <div class="story-side reveal reveal-delay-1">
+          <div style="background: var(--panel);border:0.5px solid var(--border-2);border-radius:4px;padding:40px 32px;border-top:2px solid var(--gold);">
+            <span class="tag" style="margin-bottom:24px;">Nuestra visión</span>
+            <p style="font-size:15px;color:var(--muted);line-height:1.8;">Ser la empresa de seguridad K9 más confiable de México, reconocida por la calidad de su capital humano, el bienestar de sus unidades caninas y la innovación continua en sus procesos.</p>
+          </div>
+          <div style="background: var(--panel);border:0.5px solid var(--border-2);border-radius:4px;padding:40px 32px;">
+            <span class="tag" style="margin-bottom:24px;">Nuestro diferenciador</span>
+            <p style="font-size:15px;color:var(--muted);line-height:1.8;">La salud y bienestar de nuestras unidades K9 es una prioridad operativa. Ningún entrenamiento compromete la integridad del animal. Este principio nos diferencia de cualquier competidor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="values-section" aria-labelledby="values-heading">
+      <div class="container">
+        <span class="tag reveal">Lo que nos define</span>
+        <h2 class="section-title reveal reveal-delay-1" id="values-heading">NUESTROS<br>VALORES</h2>
+        <div class="values-grid">
+          <div class="value-card reveal">
+            <div class="value-number">01</div>
+            <h3>Confiabilidad</h3>
+            <p>Cumplimos lo que prometemos. Nuestros clientes pueden contar con nosotros en cualquier momento.</p>
+          </div>
+          <div class="value-card reveal reveal-delay-1">
+            <div class="value-number">02</div>
+            <h3>Excelencia</h3>
+            <p>Capacitación continua, estándares altos y mejora constante en cada proceso y servicio.</p>
+          </div>
+          <div class="value-card reveal reveal-delay-2">
+            <div class="value-number">03</div>
+            <h3>Bienestar animal</h3>
+            <p>Nuestras unidades K9 son tratadas con el máximo cuidado. Su salud es nuestra responsabilidad.</p>
+          </div>
+          <div class="value-card reveal reveal-delay-3">
+            <div class="value-number">04</div>
+            <h3>Lealtad</h3>
+            <p>Relaciones de largo plazo con clientes y colaboradores, basadas en el respeto y la transparencia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-section container" aria-labelledby="timeline-heading">
+      <span class="tag reveal">Nuestra trayectoria</span>
+      <h2 class="section-title reveal reveal-delay-1" id="timeline-heading">HISTORIA<br>DE <em class="gold">K9TEMPLATE</em></h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-year">[AÑO]</div>
+          <h3>Fundación</h3>
+          <p>K9 Template nace en la Ciudad de México con el objetivo de ofrecer seguridad K9 de nivel profesional, hasta entonces reservada solo para grandes corporativos.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-year">[AÑO]</div>
+          <h3>Expansión de servicios</h3>
+          <p>Incorporamos el programa de perros de detección de explosivos y narcóticos, ampliando nuestra cobertura a aeropuertos, eventos y centros logísticos.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-year">[AÑO]</div>
+          <h3>Clientes de clase mundial</h3>
+          <p>LogiCorp, PaqExpress, MercadoPlus y AutoMex se integran como clientes estratégicos, consolidando la reputación de K9 Template como proveedor de primer nivel.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-year">[AÑO]</div>
+          <h3>Renovación y crecimiento</h3>
+          <p>Reestructuración de procesos internos, incorporación de tecnología CCTV integrada y expansión del equipo de adiestramiento profesional.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-year">Hoy</div>
+          <h3>Líderes del sector</h3>
+          <p>Más de [X] años, [X]+ clientes activos y 5 unidades K9 disponibles. Seguimos creciendo con el mismo compromiso del primer día.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cert-section container" id="certificaciones" aria-labelledby="cert-heading">
+      <span class="tag reveal">Respaldo oficial</span>
+      <h2 class="section-title reveal reveal-delay-1" id="cert-heading">CERTIFI-<br>CACIONES</h2>
+      <div class="certs-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon">DGSSP</div>
+          <h3>Dirección General de Seguridad Privada</h3>
+          <p>Registro y autorización ante la DGSSP para operar como empresa de seguridad privada en territorio nacional.</p>
+        </div>
+        <div class="cert-card reveal reveal-delay-1">
+          <div class="cert-icon">K9</div>
+          <h3>Certificación Canina</h3>
+          <p>Todas nuestras unidades K9 cuentan con certificación de entrenamiento profesional y salud veterinaria actualizada.</p>
+        </div>
+        <div class="cert-card reveal reveal-delay-2">
+          <div class="cert-icon">ISO</div>
+          <h3>Procesos Certificados</h3>
+          <p>Protocolos operativos estandarizados que garantizan la calidad y consistencia del servicio en todos los contratos.</p>
+        </div>
+        <div class="cert-card reveal reveal-delay-3">
+          <div class="cert-icon">SSP</div>
+          <h3>Secretaría de Seguridad</h3>
+          <p>Cumplimiento de los estándares establecidos por la Secretaría de Seguridad Pública para empresas privadas.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">K9TEMPLATE</div>
+        <p class="tagline">Empresa de seguridad K9 y privada en México. Más de [X] años protegiendo lo que más importa.</p>
+        <div class="footer-contact">
+          <span><strong>Tel:</strong> +52 (55) 0000-0000</span>
+          <span><strong>Email:</strong> info@k9template.com</span>
+          <span><strong>Dirección:</strong> Calle Ejemplo #100, Col. Centro, CDMX</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="servicios.html#k9">Seguridad K9</a></li>
+          <li><a href="servicios.html#guardias">Guardias</a></li>
+          <li><a href="servicios.html#deteccion">K9 Detección</a></li>
+          <li><a href="servicios.html#adiestramiento">Adiestramiento</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+          <li><a href="#certificaciones">Certificaciones</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="footer-year"></span> K9 Template Seguridad. Todos los derechos reservados.</p>
+      <div class="footer-certif"><span class="certif-badge">DGSSP</span><span class="certif-badge">Certificado</span></div>
+    </div>
+  </footer>
+
+  <script src="js/bg.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

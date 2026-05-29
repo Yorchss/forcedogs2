@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- ── SEO Primary ── -->
+  <title>forcedogs Template — Seguridad forcedogs y Privada en México</title>
+  <meta name="description" content="Empresa de seguridad forcedogs y privada en México. Guardias certificados, binomios forcedogs, detección y adiestramiento profesional." />
+  <meta name="keywords" content="seguridad forcedogs México, guardias de seguridad, perros detectores, seguridad privada, binomio forcedogs, adiestramiento canino" />
+  <meta name="author" content="forcedogs Template Seguridad" />
+  <link rel="canonical" href="https://forcedogstemplate.com/index.html" />
+
+  <!-- ── Open Graph / Facebook ── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://forcedogstemplate.com/" />
+  <meta property="og:title" content="forcedogs Template — Seguridad forcedogs y Privada en México" />
+  <meta property="og:description" content="Más de [X] años protegiendo empresas. Guardias certificados, binomios forcedogs y detección profesional." />
+  <meta property="og:image" content="https://forcedogstemplate.com/og-image.jpg" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:site_name" content="forcedogs Template Seguridad" />
+
+  <!-- ── Twitter Card ── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="forcedogs Template — Seguridad forcedogs y Privada en México" />
+  <meta name="twitter:description" content="Más de [X] años protegiendo empresas con guardias certificados y binomios forcedogs." />
+  <meta name="twitter:image" content="https://forcedogstemplate.com/og-image.jpg" />
+
+  <!-- ── Schema.org Structured Data ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "forcedogs Template Seguridad",
+    "description": "Empresa de seguridad forcedogs y privada en México con más de [X] años de experiencia.",
+    "url": "https://forcedogstemplate.com",
+    "telephone": "+52-55-0000-0000",
+    "email": "info@forcedogstemplate.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Ejemplo #100",
+      "addressLocality": "Iztapalapa",
+      "addressRegion": "Ciudad de México",
+      "addressCountry": "MX"
+    },
+    "sameAs": ["https://www.facebook.com/forcedogstemplate"],
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "priceRange": "$$"
+  }
+  </script>
+
+  <!-- ── Favicon ── -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23090909'/><text y='24' x='4' font-size='22' font-family='serif' fill='%23C9A84C'>K</text></svg>" />
+
+  <!-- ── Fonts & Styles ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- ── Page-specific styles ── -->
+  <style>
+    /* ── Hero ── */
+    .hero {
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 0 80px;
+    }
+    .hero-inner {
+      container: hero / inline-size;
+    }
+    .hero-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .hero-eyebrow .line { width: 48px; height: 1px; background: var(--gold); }
+    .hero-eyebrow span {
+      font-family: var(--font-cond);
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .hero-headline {
+      font-family: var(--font-display);
+      font-size: clamp(56px, 9vw, 120px);
+      line-height: 0.92;
+      letter-spacing: 3px;
+      margin-bottom: 28px;
+    }
+    .hero-headline em { color: var(--gold); font-style: normal; }
+    .hero-desc {
+      font-size: 16px;
+      color: var(--muted);
+      max-width: 480px;
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+    .hero-scroll {
+      position: absolute;
+      bottom: 32px;
+      right: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    .hero-scroll span {
+      font-family: var(--font-cond);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      writing-mode: vertical-rl;
+    }
+    .hero-scroll .scroll-line {
+      width: 1px; height: 40px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.4; } 50% { opacity: 1; }
+    }
+
+    /* ── Stats strip ── */
+    .stats-strip {
+      background: var(--panel);
+      border-top: 0.5px solid var(--border-2);
+      border-bottom: 0.5px solid var(--border-2);
+      padding: 36px 0;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      divide-x: 1px solid var(--border);
+    }
+    .stat-item {
+      padding: 0 40px;
+      border-left: 0.5px solid var(--border);
+    }
+    .stat-item:first-child { border-left: none; }
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 52px;
+      line-height: 1;
+      color: var(--gold);
+      letter-spacing: 1px;
+    }
+    .stat-label { font-size: 13px; color: var(--muted); margin-top: 4px; letter-spacing: 0.5px; }
+
+    /* ── Services section ── */
+    .services-section { padding: 100px 0; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 0.5px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: 56px;
+    }
+    .service-card {
+      background: var(--panel);
+      padding: 40px 32px;
+      transition: background 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.35s var(--ease-out);
+    }
+    .service-card:hover { background: var(--navy-mid); }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-num {
+      font-family: var(--font-display);
+      font-size: 48px;
+      color: var(--border-2);
+      line-height: 1;
+      margin-bottom: 20px;
+      transition: color 0.3s;
+    }
+    .service-card:hover .service-num { color: var(--gold-dim); }
+    .service-card h3 {
+      font-family: var(--font-cond);
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .service-card p { font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-cond);
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 20px;
+      transition: gap 0.2s;
+    }
+    .service-link:hover { gap: 10px; }
+
+    /* ── Clients ── */
+    .clients-section { padding: 80px 0; }
+    .clients-logos {
+      display: flex;
+      gap: 0;
+      flex-wrap: wrap;
+      border: 0.5px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: 48px;
+    }
+    .client-item {
+      flex: 1 1 160px;
+      padding: 28px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 0.5px solid var(--border);
+      border-bottom: 0.5px solid var(--border);
+      font-family: var(--font-cond);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      transition: color 0.25s, background 0.25s;
+    }
+    .client-item:hover { color: var(--gold); background: var(--panel); }
+
+    /* ── CTA band ── */
+    .cta-band {
+      padding: 100px 0;
+      text-align: center;
+    }
+    .cta-band .section-title { font-size: clamp(36px, 5vw, 64px); }
+    .cta-actions { display: flex; gap: 16px; justify-content: center; margin-top: 40px; flex-wrap: wrap; }
+
+    @media (max-width: 768px) {
+      .hero { padding-bottom: 60px; }
+      .hero-scroll { display: none; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .stat-item { border-top: 0.5px solid var(--border); }
+      .stat-item:nth-child(1), .stat-item:nth-child(2) { border-top: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background canvas -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- ══ HEADER ══════════════════════════════════════════════ -->
+  <header id="site-header" role="banner">
+    <a href="index.html" class="header-logo" aria-label="forcedogs Template — Inicio">
+      <div class="logo-icon" aria-hidden="true">
+        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 4L10 10L4 16M10 4L16 10L10 16" stroke="#5C6B2E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <div class="logo-text">forcedogsTEMPLATE</div>
+        <div class="logo-sub">Seguridad forcedogs</div>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="index.html">Home</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="quienes-somos.html">Quiénes Somos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <a href="contacto.html" class="nav-cta">Cotizar</a>
+
+    <button class="nav-hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile nav -->
+  <nav class="mobile-nav" aria-label="Menú móvil">
+    <a href="index.html">Home</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="quienes-somos.html">Quiénes Somos</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <!-- ══ MAIN ════════════════════════════════════════════════ -->
+  <main class="page-content">
+
+    <!-- Hero -->
+    <section class="hero container" aria-labelledby="hero-headline" style="position:relative;">
+      <div class="hero-inner">
+        <div class="hero-eyebrow reveal">
+          <div class="line"></div>
+          <span>Seguridad integral con años de experiencia</span>
+        </div>
+        <h1 class="hero-headline reveal reveal-delay-1" id="hero-headline">
+          PROTECCIÓN<br><em>SIN</em><br>LÍMITES
+        </h1>
+        <p class="hero-desc reveal reveal-delay-2">
+          Seguridad forcedogs, guardias certificados y tecnología de detección.
+          Todo lo que tu empresa necesita, de un solo proveedor de confianza.
+        </p>
+        <div class="hero-actions reveal reveal-delay-3">
+          <a href="servicios.html" class="btn btn-gold">
+            Ver servicios
+            <svg class="arrow-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="contacto.html" class="btn btn-outline">Solicitar cotización</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats-strip" aria-label="Cifras destacadas">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-num"><span data-count="10" data-suffix="+">[X]+</span></div>
+            <div class="stat-label">Años de experiencia</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num"><span data-count="50" data-suffix="+">[X]+</span></div>
+            <div class="stat-label">Clientes activos</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num"><span data-count="5">5</span></div>
+            <div class="stat-label">forcedogs disponibles</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">360<span style="font-size:0.5em">°</span></div>
+            <div class="stat-label">Seguridad integral</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services-section" aria-labelledby="services-heading">
+      <div class="container">
+        <span class="tag reveal">Lo que ofrecemos</span>
+        <h2 class="section-title reveal reveal-delay-1" id="services-heading">NUESTROS<br>SERVICIOS</h2>
+        <p class="section-body reveal reveal-delay-2">Cubrimos todas tus necesidades de seguridad desde un único proveedor confiable con tecnología, experiencia y resultados comprobados.</p>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-num">01</div>
+            <h3>Seguridad forcedogs</h3>
+            <p>Binomios guardia + perro forcedogs altamente entrenados. Capacitación continua y monitoreo constante de la salud de nuestras unidades.</p>
+            <a href="servicios.html#forcedogs" class="service-link">
+              Ver más →
+            </a>
+          </article>
+          <article class="service-card reveal reveal-delay-1">
+            <div class="service-num">02</div>
+            <h3>Guardias</h3>
+            <p>Vigilancia intramuros en instalaciones comerciales y residenciales. Control de acceso, inspecciones y prevención de riesgos.</p>
+            <a href="servicios.html#guardias" class="service-link">
+              Ver más →
+            </a>
+          </article>
+          <article class="service-card reveal reveal-delay-2">
+            <div class="service-num">03</div>
+            <h3>forcedogs Detección</h3>
+            <p>Detección de explosivos, narcóticos y sustancias peligrosas. 5 perros disponibles para entrega inmediata.</p>
+            <a href="servicios.html#deteccion" class="service-link">
+              Ver más →
+            </a>
+          </article>
+          <article class="service-card reveal reveal-delay-3">
+            <div class="service-num">04</div>
+            <h3>Adiestramiento</h3>
+            <p>Entrenamiento profesional forcedogs en detección, educación, patrullaje y ataque. Metodología basada en niveles de aprendizaje.</p>
+            <a href="servicios.html#adiestramiento" class="service-link">
+              Ver más →
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients -->
+    <section class="clients-section" aria-labelledby="clients-heading">
+      <div class="container">
+        <span class="tag reveal">Empresas que confían en nosotros</span>
+        <h2 class="section-title reveal reveal-delay-1" id="clients-heading">NUESTROS<br>CLIENTES</h2>
+        <div class="clients-logos reveal reveal-delay-2" role="list">
+          <div class="client-item" role="listitem">LogiCorp</div>
+          <div class="client-item" role="listitem">PaqExpress</div>
+          <div class="client-item" role="listitem">MercadoPlus</div>
+          <div class="client-item" role="listitem">AutoMex</div>
+          <div class="client-item" role="listitem">UnivTec</div>
+          <div class="client-item" role="listitem">UniCampus</div>
+          <div class="client-item" role="listitem">UniTech</div>
+          <div class="client-item" role="listitem">CervezaMX</div>
+          <div class="client-item" role="listitem">AlimentosMX</div>
+          <div class="client-item" role="listitem">MarcaFlex</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <div class="container">
+        <span class="tag reveal" style="justify-content:center;">¿Listo para proteger tu empresa?</span>
+        <h2 class="section-title reveal reveal-delay-1" id="cta-heading">EVALUAMOS<br>TUS NECESIDADES<br><em class="gold">SIN COSTO</em></h2>
+        <p class="section-body reveal reveal-delay-2" style="margin: 0 auto;">Respuesta en menos de 24 horas. Nuestro equipo de expertos analizará tus requerimientos de seguridad y te presentará una propuesta personalizada.</p>
+        <div class="cta-actions reveal reveal-delay-3">
+          <a href="contacto.html" class="btn btn-gold">Contactar ahora</a>
+          <a href="tel:525500000000" class="btn btn-outline">+52 (55) 0000-0000</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ══════════════════════════════════════════════ -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">forcedogsTEMPLATE</div>
+        <p class="tagline">Empresa de seguridad forcedogs y privada en México. Más de [X] años protegiendo lo que más importa.</p>
+        <div class="footer-contact">
+          <span><strong>Tel:</strong> +52 (55) 0000-0000</span>
+          <span><strong>Email:</strong> info@forcedogstemplate.com</span>
+          <span><strong>Dirección:</strong> Calle Ejemplo #100, Col. Centro, CDMX</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="servicios.html#forcedogs">Seguridad forcedogs</a></li>
+          <li><a href="servicios.html#guardias">Guardias</a></li>
+          <li><a href="servicios.html#deteccion">forcedogs Detección</a></li>
+          <li><a href="servicios.html#adiestramiento">Adiestramiento</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+          <li><a href="quienes-somos.html#certificaciones">Certificaciones</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="aviso-privacidad.html">Aviso de Privacidad</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="footer-year"></span> forcedogs Template Seguridad. Todos los derechos reservados.</p>
+      <div class="footer-certif">
+        <span class="certif-badge">DGSSP</span>
+        <span class="certif-badge">Certificado</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bg.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

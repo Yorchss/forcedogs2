@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios — Kanino Seguridad K9 y Privada</title>
+  <meta name="description" content="Conoce todos los servicios de seguridad de Kanino: Binomios K9, guardias certificados, perros detectores de explosivos y narcóticos, y adiestramiento profesional." />
+  <link rel="canonical" href="https://kanino.com/servicios.html" />
+  <meta property="og:title" content="Servicios — Kanino Seguridad" />
+  <meta property="og:description" content="Seguridad K9, guardias, detección y adiestramiento. Protección integral para tu empresa." />
+  <meta property="og:url" content="https://kanino.com/servicios.html" />
+  <meta property="og:type" content="website" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Servicios de Seguridad Kanino",
+    "provider": { "@type": "LocalBusiness", "name": "Kanino Seguridad" },
+    "serviceType": ["Seguridad K9", "Guardias de seguridad", "Detección canina", "Adiestramiento K9"],
+    "areaServed": "México"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Page hero */
+    .page-hero {
+      padding: 120px 0 80px;
+      border-bottom: 0.5px solid var(--border);
+    }
+    .page-hero .tag { margin-bottom: 16px; }
+    .page-hero h1 { font-family: var(--font-display); font-size: clamp(48px, 8vw, 96px); line-height: 0.93; letter-spacing: 3px; }
+
+    /* Service detail blocks */
+    .service-block {
+      padding: 80px 0;
+      border-bottom: 0.5px solid var(--border);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .service-block:nth-child(even) .service-block-text { order: 2; }
+    .service-block:nth-child(even) .service-block-visual { order: 1; }
+
+    .service-block-text .service-tag {
+      font-family: var(--font-display);
+      font-size: 120px;
+      line-height: 1;
+      color: var(--border-2);
+      letter-spacing: 2px;
+      margin-bottom: -20px;
+    }
+    .service-block-text h2 {
+      font-family: var(--font-display);
+      font-size: clamp(36px, 4vw, 52px);
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      line-height: 1;
+    }
+    .service-block-text p { font-size: 15px; color: var(--muted); line-height: 1.75; margin-bottom: 24px; }
+    .service-features { margin: 24px 0; display: flex; flex-direction: column; gap: 10px; }
+    .service-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .service-feature::before {
+      content: '';
+      flex-shrink: 0;
+      width: 16px; height: 1px;
+      background: var(--gold);
+      margin-top: 10px;
+    }
+
+    /* Visual box */
+    .service-block-visual {
+      background: var(--panel);
+      border: 0.5px solid var(--border);
+      border-radius: 4px;
+      padding: 48px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-block-visual::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--gold);
+    }
+    .visual-icon {
+      font-size: 64px;
+      line-height: 1;
+      font-family: var(--font-display);
+      color: var(--gold);
+      opacity: 0.6;
+      letter-spacing: 0;
+    }
+    .visual-stat { margin-top: auto; }
+    .visual-stat .num { font-family: var(--font-display); font-size: 56px; color: var(--white); letter-spacing: 1px; }
+    .visual-stat .label { font-size: 12px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; font-family: var(--font-cond); }
+    .capability-tag {
+      display: inline-block;
+      font-family: var(--font-cond);
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 0.5px solid var(--gold);
+      padding: 5px 12px;
+      border-radius: 2px;
+      margin: 2px;
+    }
+    .tags-wrap { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 12px; }
+
+    @media (max-width: 768px) {
+      .service-block { grid-template-columns: 1fr; gap: 32px; }
+      .service-block:nth-child(even) .service-block-text { order: 1; }
+      .service-block:nth-child(even) .service-block-visual { order: 2; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <header id="site-header" role="banner">
+    <a href="index.html" class="header-logo" aria-label="Kanino — Inicio">
+      <div class="logo-icon" aria-hidden="true">
+        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 4L10 10L4 16M10 4L16 10L10 16" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <div class="logo-text">KANINO</div>
+        <div class="logo-sub">Seguridad K9</div>
+      </div>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="index.html">Home</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="quienes-somos.html">Quiénes Somos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <a href="contacto.html" class="nav-cta">Cotizar</a>
+    <button class="nav-hamburger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </header>
+  <nav class="mobile-nav" aria-label="Menú móvil">
+    <a href="index.html">Home</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="quienes-somos.html">Quiénes Somos</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main class="page-content">
+    <section class="page-hero container" aria-labelledby="page-title">
+      <span class="tag reveal">Protección integral</span>
+      <h1 class="reveal reveal-delay-1" id="page-title">NUESTROS<br>SERVICIOS</h1>
+      <p class="section-body reveal reveal-delay-2" style="margin-top:16px;">Todo lo que tu empresa necesita para estar protegida, en un solo lugar. Desde binomios K9 hasta consultoría especializada.</p>
+    </section>
+
+    <!-- K9 -->
+    <section class="container" id="k9" aria-labelledby="k9-heading">
+      <div class="service-block">
+        <div class="service-block-text reveal">
+          <div class="service-tag">01</div>
+          <h2 id="k9-heading">SEGURIDAD<br>K9</h2>
+          <p>Ofrecemos el sistema más efectivo de seguridad: un binomio formado por un guardia certificado y su unidad K9. No solo tienes la capacidad de detección de un perro entrenado, sino además la respuesta táctica de un elemento de seguridad privada.</p>
+          <div class="service-features">
+            <div class="service-feature">Binomios de seguridad altamente entrenados y certificados</div>
+            <div class="service-feature">Unidades K9 con entrenamiento profesional continuo</div>
+            <div class="service-feature">Monitoreo constante de la salud y bienestar de cada unidad</div>
+            <div class="service-feature">Capacitación mensual para guías y manejadores</div>
+            <div class="service-feature">Cobertura para eventos, instalaciones y patrullaje perimetral</div>
+          </div>
+          <a href="contacto.html" class="btn btn-gold" style="margin-top:8px;">Solicitar este servicio</a>
+        </div>
+        <div class="service-block-visual reveal reveal-delay-1">
+          <div class="visual-icon">K9</div>
+          <p style="font-size:14px; color:var(--muted);">El binomio guardia + K9 es reconocido internacionalmente como el sistema de seguridad más efectivo para patrullaje y disuasión.</p>
+          <div class="tags-wrap">
+            <span class="capability-tag">Patrullaje</span>
+            <span class="capability-tag">Disuasión</span>
+            <span class="capability-tag">Detección</span>
+            <span class="capability-tag">Respuesta táctica</span>
+          </div>
+          <div class="visual-stat">
+            <div class="num">100%</div>
+            <div class="label">Guardias certificados</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guardias -->
+    <section class="container" id="guardias" aria-labelledby="guardias-heading">
+      <div class="service-block">
+        <div class="service-block-text reveal">
+          <div class="service-tag">02</div>
+          <h2 id="guardias-heading">GUARDIAS<br>DE SEGURIDAD</h2>
+          <p>Nuestros elementos son seleccionados rigurosamente y capacitados de forma continua. Realizan la vigilancia intramuros en áreas de uso público o privado, manteniendo seguros a personas, recursos materiales y patrimonios.</p>
+          <div class="service-features">
+            <div class="service-feature">Vigilancia de instalaciones comerciales y residenciales</div>
+            <div class="service-feature">Control de acceso vehicular y peatonal</div>
+            <div class="service-feature">Inspecciones de seguridad y rondines programados</div>
+            <div class="service-feature">Prevención de incidentes y protocolos de respuesta</div>
+            <div class="service-feature">Uniformes identificados y equipo de comunicación</div>
+          </div>
+          <a href="contacto.html" class="btn btn-gold" style="margin-top:8px;">Solicitar este servicio</a>
+        </div>
+        <div class="service-block-visual reveal reveal-delay-1">
+          <div class="visual-icon">GS</div>
+          <p style="font-size:14px; color:var(--muted);">Presencia física certificada por la Dirección General de Seguridad Privada, con protocolos actualizados y comunicación directa.</p>
+          <div class="tags-wrap">
+            <span class="capability-tag">Control acceso</span>
+            <span class="capability-tag">Rondines</span>
+            <span class="capability-tag">Prevención</span>
+            <span class="capability-tag">CCTV</span>
+          </div>
+          <div class="visual-stat">
+            <div class="num">24/7</div>
+            <div class="label">Disponibilidad operativa</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detección -->
+    <section class="container" id="deteccion" aria-labelledby="deteccion-heading">
+      <div class="service-block">
+        <div class="service-block-text reveal">
+          <div class="service-tag">03</div>
+          <h2 id="deteccion-heading">K9<br>DETECCIÓN</h2>
+          <p>Nuestro programa de perros detectores se basa en la capacidad de juego, búsqueda y concentración. Ningún perro es entrenado con materiales dañinos; todos los olores de entrenamiento son elaborados a partir de sustancias que no perjudican la integridad del animal.</p>
+          <div class="service-features">
+            <div class="service-feature">Pólvora y Nitrato de Amonio</div>
+            <div class="service-feature">RDX, PETN, Nitratos, Cloratos, TNT y plásticos explosivos</div>
+            <div class="service-feature">Narcóticos y sustancias controladas</div>
+            <div class="service-feature">5 unidades disponibles para entrega inmediata</div>
+            <div class="service-feature">Cobertura para eventos masivos, aeropuertos y bodegas</div>
+          </div>
+          <a href="contacto.html" class="btn btn-gold" style="margin-top:8px;">Solicitar este servicio</a>
+        </div>
+        <div class="service-block-visual reveal reveal-delay-1">
+          <div class="visual-icon">DT</div>
+          <p style="font-size:14px; color:var(--muted);">Capacidad de detectar amenazas que ningún dispositivo electrónico puede igualar. Respuesta inmediata con 5 unidades disponibles.</p>
+          <div class="tags-wrap">
+            <span class="capability-tag">Explosivos</span>
+            <span class="capability-tag">Narcóticos</span>
+            <span class="capability-tag">Eventos</span>
+            <span class="capability-tag">Respuesta rápida</span>
+          </div>
+          <div class="visual-stat">
+            <div class="num">5</div>
+            <div class="label">Unidades disponibles</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Adiestramiento -->
+    <section class="container" id="adiestramiento" aria-labelledby="adiest-heading">
+      <div class="service-block">
+        <div class="service-block-text reveal">
+          <div class="service-tag">04</div>
+          <h2 id="adiest-heading">ADIESTRA-<br>MIENTO K9</h2>
+          <p>El adiestramiento recae 100% en la seguridad y tranquilidad de la unidad K9. Nuestros métodos vigilan la integridad del animal en todo momento, con un proyecto estructurado en niveles de aprendizaje para alcanzar el máximo rendimiento.</p>
+          <div class="service-features">
+            <div class="service-feature">Detección de olores y sustancias específicas</div>
+            <div class="service-feature">Educación básica y obediencia avanzada</div>
+            <div class="service-feature">Patrullaje y trabajo en binomio</div>
+            <div class="service-feature">Entrenamiento de ataque controlado</div>
+            <div class="service-feature">Seguimiento y evaluación por etapas</div>
+          </div>
+          <a href="contacto.html" class="btn btn-gold" style="margin-top:8px;">Solicitar este servicio</a>
+        </div>
+        <div class="service-block-visual reveal reveal-delay-1">
+          <div class="visual-icon">AD</div>
+          <p style="font-size:14px; color:var(--muted);">Programas personalizados según las necesidades operativas de cada cliente. Metodología certificada y seguimiento continuo.</p>
+          <div class="tags-wrap">
+            <span class="capability-tag">Detección</span>
+            <span class="capability-tag">Educación</span>
+            <span class="capability-tag">Patrullaje</span>
+            <span class="capability-tag">Ataque</span>
+          </div>
+          <div class="visual-stat">
+            <div class="num">4</div>
+            <div class="label">Especialidades de entrenamiento</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section style="padding: 80px 0; text-align:center;" aria-labelledby="serv-cta">
+      <div class="container">
+        <span class="tag reveal" style="justify-content:center;">¿Tienes una necesidad específica?</span>
+        <h2 class="section-title reveal reveal-delay-1" id="serv-cta">HABLEMOS<br>DE TU <em class="gold">PROYECTO</em></h2>
+        <div style="margin-top:32px;" class="reveal reveal-delay-2">
+          <a href="contacto.html" class="btn btn-gold">Contactar a un experto</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">KANINO</div>
+        <p class="tagline">Empresa líder en seguridad K9 y privada en México. Más de 22 años protegiendo lo que más importa.</p>
+        <div class="footer-contact">
+          <span><strong>Tel:</strong> +52 (55) 2636-2078</span>
+          <span><strong>Email:</strong> info@kanino.com</span>
+          <span><strong>Dirección:</strong> Vicente Guerrero #128, Iztapalapa, CDMX</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#k9">Seguridad K9</a></li>
+          <li><a href="#guardias">Guardias</a></li>
+          <li><a href="#deteccion">K9 Detección</a></li>
+          <li><a href="#adiestramiento">Adiestramiento</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+          <li><a href="quienes-somos.html#certificaciones">Certificaciones</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="footer-year"></span> Kanino Seguridad. Todos los derechos reservados.</p>
+      <div class="footer-certif"><span class="certif-badge">DGSSP</span><span class="certif-badge">Certificado</span></div>
+    </div>
+  </footer>
+
+  <script src="js/bg.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
